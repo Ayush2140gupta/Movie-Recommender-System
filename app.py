@@ -12,7 +12,11 @@ st.set_page_config(
 
 # ---------------- API KEY ---------------- #
 
-API_KEY = "a357fce11f533b32b7f6bcfa2c6f1bb7"
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+API_KEY = os.getenv("API_KEY")
 
 # ---------------- FETCH POSTER ---------------- #
 
